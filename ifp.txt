@@ -1,0 +1,105 @@
+PROJETO: Jogo Água, Fogo ou Terra
+DATA: 2025/06/30
+AUTOR: Kauê Mendes
+ARQUIVO: meu_projeto.py
+
+
+01. ENTRADA
+Linha 30: jogador = input("Escolha (Água, Fogo ou Terra): ").lower()
+Explicação: A variável 'jogador' recebe a entrada do usuário, convertida para letras minúsculas para facilitar a comparação.
+
+
+02. SAÍDA
+
+
+Linha 26: print("=== JOGO: ÁGUA, FOGO OU TERRA ===")
+Explicação: Exibe o título do jogo.
+
+Linha 27: print("Regras: Água vence Fogo | Fogo vence Terra | Terra vence Água")
+Explicação: Exibe as regras do jogo.
+
+Linha 28: print("BY: Kauê Mendes\n")
+Explicação: Mostra o nome do desenvolvedor.
+
+Linha 32: print("Escolha inválida! Tente novamente.")
+Explicação: Mostra uma mensagem de erro caso a escolha seja inválida.
+
+Linha 35: print(f"\nVocê escolheu: {jogador.capitalize()}")
+Explicação: Mostra a escolha do jogador com a primeira letra maiúscula.
+
+Linha 36: print(f"Computador escolheu: {computador.capitalize()}")
+Explicação: Mostra a escolha aleatória do computador.
+
+Linha 37: print("\n" + resultado(jogador, computador))
+Explicação: Mostra o resultado do jogo chamando a função resultado().
+
+
+03. VARIÁVEIS
+
+
+Linha 18: REGRA = "Água vence Fogo | Fogo vence Terra | Terra vence Água"
+Explicação: Constante com as regras do jogo.
+
+Linha 25: opcoes = ['água', 'fogo', 'terra']
+Explicação: Lista com as opções válidas para o jogo.
+
+Linha 30: jogador = input(...).lower()
+Explicação: Armazena a escolha do jogador.
+
+Linha 34: computador = random.choice(opcoes)
+Explicação: Armazena a escolha aleatória do computador.
+
+
+04. OPERADORES
+
+
+Linha 6: if jogador == computador:
+Explicação: Verifica se houve empate.
+
+Linhas 8-10:
+elif (jogador == 'água' and computador == 'fogo') or \
+     (jogador == 'fogo' and computador == 'terra') or \
+     (jogador == 'terra' and computador == 'água'):
+Explicação: Usa operadores lógicos e de comparação para checar se o jogador venceu.
+
+Linha 31: if jogador not in opcoes:
+Explicação: Verifica se a escolha do jogador é inválida.
+
+
+05. ESTRUTURAS CONDICIONAIS
+
+
+Linha 6: if jogador == computador:
+Explicação: Verifica empate.
+
+Linha 8: elif (...):
+Explicação: Verifica vitória do jogador.
+
+Linha 11: else:
+Explicação: Caso o jogador tenha perdido.
+
+Linha 31: if jogador not in opcoes:
+Explicação: Verifica se a entrada do jogador é válida.
+
+
+06. ESTRUTURAS DE REPETIÇÃO
+
+
+Não aplicável neste código.
+Explicação: O jogo é executado apenas uma vez, não há laços (while, for).
+
+
+07. FUNÇÕES
+
+
+Linha 5: def resultado(jogador, computador):
+Explicação: Define a função que retorna o resultado do jogo.
+
+Linha 21: def jogar():
+Explicação: Define a função principal do jogo.
+
+Linha 39: jogar()
+Explicação: Chama a função jogar() para iniciar o jogo.
+
+Linhas 30–37: uso de input(), print(), random.choice(), lower(), capitalize()
+Explicação: Uso de funções e métodos internos da linguagem para entrada, saída e formatação.
